@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="Employee.Components.Product_soldView.Product_soldUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Employee.Components.Product_soldView"
+             mc:Ignorable="d" 
+            Height="440" Width="280"
+             Margin="10">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" CornerRadius="10 10 0 0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA9E447"/>
+                    <GradientStop Color="#FFB7D600" Offset="1"/>
+                    <GradientStop Color="#FFC6D635" Offset="0.386"/>
+                    <GradientStop Color="#FFADD03A" Offset="0.683"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label Content="Products Sold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontStyle="Italic"
+                   FontFamily="Jetbrains Mono"/>
+        </Border>
+        <Border Grid.Row="1" Background="Bisque">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Label Visibility="Hidden" x:Name="id"/>
+                <StackPanel Grid.Row="0" 
+                            Orientation="Horizontal">
+                    <Path Data="{DynamicResource worker}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                    <Label Content="Worker" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                    <Label x:Name="lblworkername" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="30 0 0 0"/>
+
+                </StackPanel>
+
+
+                <StackPanel Grid.Row="1" 
+                            Orientation="Horizontal">
+                    <Path Data="{DynamicResource worker}"
+                          VerticalAlignment="Center"
+                          Fill="Black"
+                          Margin="10 0 0 0"/>
+
+                    <Label Content="Client" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                    <Label x:Name="lblclientname" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="30 0 0 0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" 
+                            Orientation="Horizontal">
+                    <Path Data="{DynamicResource product}"
+                          VerticalAlignment="Center"
+                          Fill="Black"
+                          Margin="10 0 0 0"/>
+
+                    <Label Content="Product" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="10 0 0 0"
+                           Width="70"/>
+                    <Label x:Name="productname" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="30 0 0 0"/>
+                </StackPanel>
+
+
+                <StackPanel Grid.Row="3" 
+                            Orientation="Horizontal">
+                    <Path Data="{DynamicResource son}"
+                          VerticalAlignment="Center"
+                          Fill="Black"
+                          Margin="10 0 0 0"/>
+
+                    <Label Content="Amount"
+                           VerticalAlignment="Center"
+                           Margin="13 0 0 0"
+                           Width="70"/>
+                    <Label x:Name="amount" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="30 0 0 0"
+                           />
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" 
+                            Orientation="Horizontal">
+                    <Path Data="{DynamicResource salary}"
+                          VerticalAlignment="Center"
+                          Fill="Black"
+                          Margin="10 0 0 0"/>
+
+                    <Label Content="Total"
+                           VerticalAlignment="Center"
+                           Margin="10 0 0 0"
+                           />
+                    <Label x:Name="totalcost" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="75 0 0 0" 
+                           />
+                </StackPanel>
+
+
+                <StackPanel Grid.Row="5" 
+                            Orientation="Horizontal">
+                    <Path Data="{DynamicResource time}"
+                          VerticalAlignment="Center"
+                          Fill="Black"
+                          Margin="10 0 0 0"/>
+
+                    <Label Content="Working date"
+                           VerticalAlignment="Center"
+                           Margin="10 0 0 0"
+                           />
+                    <Label x:Name="lbltime" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="18.5 0 0 0" />
+                </StackPanel>
+
+
+
+                <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+
+                    <Button Style="{DynamicResource DeleteButton}" Content="Delete" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Click="Button_Click"/>
+
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Label Visibility="Hidden" x:Name="lbldes"/>
+    </Grid>
+</UserControl>

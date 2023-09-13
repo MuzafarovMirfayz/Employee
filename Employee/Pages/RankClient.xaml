@@ -1,0 +1,233 @@
+﻿<Page x:Class="Employee.Pages.RankClient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Employee.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RankWorker" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0" Height="320" Margin="10" x:Name="two" Visibility="Hidden">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Background="Silver" Grid.Row="0" CornerRadius="10 10 0 0">
+                        <Label Content="Top - 2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontStyle="Italic"
+                   FontFamily="Jetbrains Mono"/>
+                    </Border>
+                    <Border Grid.Row="1" Background="Bisque">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource personname}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Name:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="10 0 0 0"
+                           />
+
+                                <Label x:Name="lblname" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource product}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Amount" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                                <Label x:Name="amount" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource salary}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Total cost" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                                <Label x:Name="total" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Grid Grid.Column="1" Height="320"
+              Margin="10 0,10,120" x:Name="one" Visibility="Hidden">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Background="Yellow" Grid.Row="0" CornerRadius="10 10 0 0" >
+                        <Label Content="Top - 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontStyle="Italic"
+                   FontFamily="Jetbrains Mono"/>
+                    </Border>
+                    <Border Grid.Row="1" Background="Bisque">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource personname}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Name:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="10 0 0 0"
+                           />
+
+                                <Label x:Name="lblnameone" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource product}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Amount" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                                <Label x:Name="amountone" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource salary}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Total cost" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                                <Label x:Name="totalone" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+
+
+
+                <Grid Grid.Column="2" Height="320"
+              Margin="10 100 10 0" x:Name="tree" Visibility="Hidden">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Background="#A0580C" Grid.Row="0" CornerRadius="10 10 0 0">
+                        <Label Content="Top - 3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontStyle="Italic"
+                   FontFamily="Jetbrains Mono"/>
+                    </Border>
+                    <Border Background="Bisque" Margin="-3,34,3,1" Grid.RowSpan="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource personname}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Name:" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="10 0 0 0"
+                           />
+
+                                <Label x:Name="lblnamethree" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource product}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Amount" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                                <Label x:Name="amounthree" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="00 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" 
+                            Orientation="Horizontal">
+                                <Path Data="{DynamicResource salary}"
+                          VerticalAlignment="Center"
+                          Margin="10 0 0 0"
+                          Fill="Black" />
+
+                                <Label Content="Total cost" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Margin="12 0 0 0"
+                           Width="70"/>
+
+                                <Label x:Name="totalthree" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="0 0 0 0"/>
+                            </StackPanel>
+
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+    </Grid>
+</Page>

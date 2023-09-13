@@ -1,0 +1,34 @@
+﻿<Window x:Class="Employee.Windows.ProductsWindow.ProductShopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Employee.Windows.ProductsWindow"
+        mc:Ignorable="d"
+        Title="Product Shop" Height="450" Width="500"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid Background="{DynamicResource SecundaryBackgroundColor}">
+        <StackPanel>
+            <Label Content="Worker" Margin="10" FontSize="18"/>
+            <ComboBox x:Name="cmworker" Margin="10 0 10 0" 
+                      Style="{DynamicResource MaterialDesignOutlinedComboBox}" >
+            </ComboBox>
+
+            <Label Content="Client" Margin="10" FontSize="18"/>
+            <ComboBox x:Name="cmclient" Margin="10 0 10 0" 
+                      Style="{DynamicResource MaterialDesignOutlinedComboBox}">
+                
+            </ComboBox>
+            
+
+            <Label Content="Amount" Margin="10" FontSize="18" />
+            <TextBox x:Name="product_amount" Margin="10 0 10 0" 
+                      Style="{DynamicResource  MaterialDesignOutlinedTextBox}" Foreground="White"/>
+            <Button x:Name="btnBuy" Content="Buy" 
+                    Width="120" Height="50" Margin="10 20 -320 0"
+                    Click="btnBuy_Click"/>
+        </StackPanel>
+     </Grid>
+</Window>
