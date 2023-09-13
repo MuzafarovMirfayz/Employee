@@ -6,7 +6,6 @@
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
@@ -36,16 +35,11 @@ Before you begin, ensure you have met the following requirements:
 - [Any other specific requirements]
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/employee-management.git`
-2. Navigate to the project directory: `cd employee-management`
-3. [Add any additional setup instructions here, e.g., setting up a virtual environment]
+1. Clone the repository: `git clone https://github.com/your-username/Employee.git`
+2. Navigate to the project directory: `cd Employee`
 
-## Usage
-1. Configure the application settings: 
-   - [Specify configuration files or environment variables]
-2. Run the application: `python app.py` or `npm start` (depending on your setup).
-3. Access the application through your web browser at `http://localhost:8080` (or the specified URL).
-4. [Provide a brief description of how to use the application, including any login details or demo accounts if available]
+
+
 
 ## Screenshots
 [Include screenshots of your application here to give users an idea of what to expect.]
