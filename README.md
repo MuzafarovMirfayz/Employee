@@ -35,7 +35,7 @@ Before you begin, ensure you have met the following requirements:
 - [Any other specific requirements]
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/Employee.git`
+1. Clone the repository: `git clone  https://github.com/MuzafarovMirfayz/Employee.git`
 2. Navigate to the project directory: `cd Employee`
 
 
@@ -51,7 +51,7 @@ Before you begin, ensure you have met the following requirements:
 This project is licensed under the [License Name]. See the [LICENSE.md](LICENSE.md) file for details.
 
 ## Contact
-If you have any questions or feedback, please contact [Your Name] at [Your Email Address].
+If you have any questions or feedback, please contact Mirfayz at muzafarovmirik@gmail.com.
 
 ## Acknowledgments
 [Optional: Mention any libraries, frameworks, or individuals you'd like to thank or give credit to]
